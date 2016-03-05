@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CubeBlocks>
+
+		<Definition xsi:type="MyObjectBuilder_AdvancedDoorDefinition">
+			<Id>
+				<TypeId>AdvancedDoor</TypeId>
+				<SubtypeId>Trapdoor_Large</SubtypeId>
+			</Id>
+			<DisplayName>Hatch Door</DisplayName>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Trapdoor_Large.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="2" />
+				<Component Subtype="InteriorPlate" Count="2" />
+				<Component Subtype="Construction" Count="15" />
+				<Component Subtype="MetalGrid" Count="4" />
+				<Component Subtype="SmallTube" Count="4" />
+				<Component Subtype="Motor" Count="2" />
+				<Component Subtype="Display" Count="2" />
+				<Component Subtype="Computer" Count="2" />
+				<Component Subtype="InteriorPlate" Count="6" />
+				<Component Subtype="Construction" Count="25" />
+				<Component Subtype="SteelPlate" Count="6" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<BlockPairName>Trapdoor</BlockPairName>
+			<MirroringX>None</MirroringX>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>24</BuildTimeSeconds>
+			<DisassembleRatio>1.5</DisassembleRatio>
+			<Public>true</Public>
+			<ResourceSinkGroup>Doors</ResourceSinkGroup>
+			<PowerConsumptionIdle>0.00001</PowerConsumptionIdle>
+			<PowerConsumptionMoving>0.001</PowerConsumptionMoving>
+			<DamageEffectId>212</DamageEffectId>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
+			<Subparts>
+				<SubpartDefinition>
+					<Name>Trapdoor_Large_Door1</Name>
+				</SubpartDefinition>
+				<SubpartDefinition>
+					<Name>Trapdoor_Large_Door2</Name>
+				</SubpartDefinition>
+				<SubpartDefinition>
+					<Name>Trapdoor_Large_Door3</Name>
+				</SubpartDefinition>
+				<SubpartDefinition>
+					<Name>Trapdoor_Large_Door4</Name>
+				</SubpartDefinition>
+			</Subparts>
+			<OpeningSequence>
+
+<Opening>
+<IDs>0</IDs>
+<Move>Rotate</Move>
+<RotationAxis>Z</RotationAxis>
+<MaxOpen>-90</MaxOpen>
+<Speed>140</Speed>
+<PivotPosition x="0.86628" y="1.20092" z="0.86628" />
+</Opening>
+ 
+<Opening>
+<IDs>0</IDs>
+<Move>Rotate</Move>
+<RotationAxis>X</RotationAxis>
+<MaxOpen>45</MaxOpen>
+<Speed>70</Speed>
+<PivotPosition x="0.86628" y="1.20092" z="0.86628" />
+</Opening>
+ 
+<Opening>
+<IDs>0</IDs>
+<Move>Rotate</Move>
+<RotationAxis>Y</RotationAxis>
+<MaxOpen>-45</MaxOpen>
+<Speed>70</Speed>
+<PivotPosition x="0.86628" y="1.20092" z="0.86628" />
+</Opening>
+ 
+<Opening>
+<IDs>1</IDs>
+<Move>Rotate</Move>
+<RotationAxis>Z</RotationAxis>
+<MaxOpen>90</MaxOpen>
+<Speed>140</Speed>
+<PivotPosition x="-0.86628" y="1.20092" z="0.86628" />
+</Opening>
+ 
+<Opening>
+<IDs>1</IDs>
+<Move>Rotate</Move>
+<RotationAxis>X</RotationAxis>
+<MaxOpen>45</MaxOpen>
+<Speed>70</Speed>
+<PivotPosition x="-0.86628" y="1.20092" z="0.86628" />
+</Opening>
+ 
+<Opening>
+<IDs>1</IDs>
+<Move>Rotate</Move>
+<RotationAxis>Y</RotationAxis>
+<MaxOpen>45</MaxOpen>
+<Speed>70</Speed>
+<PivotPosition x="-0.86628" y="1.20092" z="0.86628" />
+</Opening>
+ 
+<Opening>
+<IDs>2</IDs>
+<Move>Rotate</Move>
+<RotationAxis>Z</RotationAxis>
+<MaxOpen>90</MaxOpen>
+<Speed>140</Speed>
+<PivotPosition x="-0.86628" y="1.20092" z="-0.86628" />
+</Opening>
+ 
+<Opening>
+<IDs>2</IDs>
+<Move>Rotate</Move>
+<RotationAxis>X</RotationAxis>
+<MaxOpen>-45</MaxOpen>
+<Speed>70</Speed>
+<PivotPosition x="-0.86628" y="1.20092" z="-0.86628" />
+</Opening>
+ 
+<Opening>
+<IDs>2</IDs>
+<Move>Rotate</Move>
+<RotationAxis>Y</RotationAxis>
+<MaxOpen>-45</MaxOpen>
+<Speed>70</Speed>
+<PivotPosition x="-0.86628" y="1.20092" z="-0.86628" />
+</Opening>
+
+<Opening>
+<IDs>3</IDs>
+<Move>Rotate</Move>
+<RotationAxis>Z</RotationAxis>
+<MaxOpen>-90</MaxOpen>
+<Speed>140</Speed>
+<PivotPosition x="0.86628" y="1.20092" z="-0.86628" />
+</Opening>
+ 
+<Opening>
+<IDs>3</IDs>
+<Move>Rotate</Move>
+<RotationAxis>X</RotationAxis>
+<MaxOpen>-45</MaxOpen>
+<Speed>70</Speed>
+<PivotPosition x="0.86628" y="1.20092" z="-0.86628" />
+</Opening>
+ 
+<Opening>
+<IDs>3</IDs>
+<Move>Rotate</Move>
+<RotationAxis>Y</RotationAxis>
+<MaxOpen>45</MaxOpen>
+<Speed>70</Speed>
+<PivotPosition x="0.86628" y="1.20092" z="-0.86628" />
+</Opening>
+
+			</OpeningSequence>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>
